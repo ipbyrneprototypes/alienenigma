@@ -114,6 +114,9 @@ window.onload = function() {
                 game.load.spritesheet("soundicons", "soundicons.png", 80, 80);
             },
             create: function() {
+                game.scale.pageAlignHorizontally = true;
+                game.scale.pageAlignVertically = true;
+                game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
                 game.stage.disableVisibilityChange = true;
                 var style = {
                     font: "48px Monospace",
